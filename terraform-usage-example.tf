@@ -20,12 +20,12 @@ module "mongodb-cluster-on-aws-ecs" {
   image                   = "docker.io/mongo:5.0.6"
   hosted_zone_name        = "project.net"         # dummy value
   ec2_key_pair_name       = "project-dev-mongodb" # dummy value
-  number_of_instances     = 3
-  private_subnet_tag_name = "Private-1*" # dummy value
+  number_of_instances     = 3                     # Minimum 1, Maximum 3
+  private_subnet_tag_name = "Private-1*"          # dummy value
 
   # If you want to enable disk usage monitoring
   monitoring_enabled       = true
-  alarm_treat_missing_data = "missing"
+  alarm_treat_missing_data = "ignore"
   aws_sns_topic            = "arn:aws:sns:eu-west-1:012345678910:AWS_SNS_TOPIC_NAME"
 
   # If you want to enable backups
