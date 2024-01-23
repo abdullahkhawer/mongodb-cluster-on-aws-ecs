@@ -118,7 +118,7 @@ variable "aws_sns_topic" {
 variable "alarm_treat_missing_data" {
   description = "Missing data on alarms"
   type        = string
-  default     = "missing"
+  default     = "ignore"
 }
 
 variable "mongodb_backup_databases" {

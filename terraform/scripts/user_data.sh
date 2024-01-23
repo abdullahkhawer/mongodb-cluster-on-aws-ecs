@@ -307,7 +307,7 @@ do
       --namespace CustomAgent \
       --period 60 \
       --statistic Maximum \
-      --threshold 90 \
+      --threshold 85 \
       --datapoints-to-alarm 1 \
       --treat-missing-data "${ALARM_TREAT_MISSING_DATA}" \
       --alarm-description "${ALARM_NAME_PREFIX} EBS Volume Disk Utilization" \
