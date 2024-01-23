@@ -6,3 +6,4 @@ terraform.tfstate.d
 .env
 .idea
 tf-plan*
+mongodb.key
