@@ -4,11 +4,11 @@
 
 ## Introduction
 
-A Terraform module developed to quickly deploy a secure, persistent, highly available, self healing, efficient and cost effective single-node or multi-node MongoDB NoSQL document database cluster on AWS ECS cluster with monitoring and alerting enabled.
+A Terraform module developed to quickly deploy a secure, persistent, highly available, self healing, efficient, cost effective and self managed single-node or multi-node MongoDB NoSQL document database cluster on AWS ECS cluster with monitoring and alerting enabled.
 
 ## Key Highlights
 
-- A single-node (1 node) or multi-node (2 or 3 nodes) MongoDB cluster under AWS Auto Scaling group to launch multiple MongoDB nodes as replicas to make it highly available, efficient and self healing with a help of bootstrapping script with some customizations.
+- A self managed single-node (1 node) or multi-node (2 or 3 nodes) MongoDB cluster under AWS Auto Scaling group to launch multiple MongoDB nodes as replicas to make it highly available, efficient and self healing with a help of bootstrapping script with some customizations.
 - Using AWS Route 53 private hosted zone for AWS ECS services with `awsvpc` as the network mode instead of AWS ELB to save cost on networking side and make it more secure. AWS ECS services' task IPs are updated on the AWS Route 53 private hosted zone by the bootstrapping script that runs on each AWS EC2 instance node as user data.
 - Persistent and encrypted AWS EBS volumes of type gp3 using rexray/ebs Docker plugin so the data stays secure and reliable.
 - AWS S3 bucket for backups storage for disaster recovery along with a lifecycle rule with Intelligent-Tiering as storage class for objects to save data storage cost.
