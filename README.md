@@ -4,7 +4,7 @@
 
 ## Introduction
 
-A Terraform module developed to quickly deploy a secure, persistent, highly available, self healing, efficient, cost effective and self managed single-node or multi-node MongoDB NoSQL document database cluster on AWS ECS cluster with monitoring and alerting enabled.
+A Terraform module to quickly deploy a secure, persistent, highly available, self healing, efficient, cost effective and self managed single-node or multi-node MongoDB NoSQL document database cluster on AWS ECS cluster with monitoring and alerting enabled.
 
 ## Key Highlights
 
