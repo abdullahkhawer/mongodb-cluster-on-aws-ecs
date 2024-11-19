@@ -30,7 +30,8 @@ Following are the resources that should exist already before starting the deploy
     - `chmod 400 mongodb.key`
 - 1 key pair named `[PROJECT]-[ENVIRONMENT_NAME]-mongodb` under **AWS EC2 Key Pairs**.
 - 1 private hosted zone under **AWS Route53** with a working domain.
-- 1 vpc under **AWS VPC** having at least 1, 2 or 3 private subnets having a name tag on each (e.g., Private-1-Subnet, Private-2-Subnet, etc).
+- 1 vpc under **AWS VPC** having at least 1 or 2 or 3 private subnets having a name tag on each (e.g., Private-1-Subnet, Private-2-Subnet, etc).
+- 1 NAT gateway under **AWS VPC** so that the AWS EC2 instances in the private subnets can access the internet to download various tools and MongoDB.
 - 1 topic under **AWS SNS** to send notifications via AWS CloudWatch alarms.
 
 ## Deployment Instructions
